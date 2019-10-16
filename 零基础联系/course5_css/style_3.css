@@ -1,0 +1,61 @@
+a :link, a :hover{
+    color:blue;
+}
+a :visited, a :active{
+    color:purple;
+}
+ul {
+    margin:0px;
+    padding:1rem;
+    list-style-type: none;
+}
+ul > li :first-child{
+    font-weight: bolder;
+}
+
+.sec_style_1 > ul {
+    display: flex;
+}
+.sec_style_1 > ul > li{
+    margin-right: 3em;
+}
+.sec_style_1 > ul > li :first-child{
+    margin-right: .5em;
+}
+.sec_style_2 > ul > li{
+    display: flex;
+}
+li > * {
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+.title{
+    margin:0;
+    background-color: #808080;
+    font-size: 1rem;
+    height:50px;
+    line-height: 50px;
+    padding-left: 1rem;
+    color:white;
+}
+section{
+    display: flex; 
+}
+section > *{
+    margin: 0px;
+    height:100px;
+}
+section > h2{
+    background-color: lightgray;
+    width: 10%;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 100px;
+    border-bottom:1px solid white;
+}
+section > ul{
+    width: 90%;
+    border-bottom:1px solid lightgray;
+    border-right:1px solid lightgray;
+}

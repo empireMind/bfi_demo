@@ -1,0 +1,44 @@
+a :link, a :hover{
+    color:blue;
+}
+a :visited, a :active{
+    color:purple;
+}
+ul {
+    margin:0px;
+    padding:0px;
+    list-style-type: none;
+}
+ul > li :first-child{
+    font-weight: bolder;
+}
+
+.sec_style_1 > ul {
+    display: flex;
+}
+.sec_style_1 > ul > li{
+    margin-right: 3em;
+}
+.sec_style_1 > ul > li :first-child{
+    margin-right: .5em;
+}
+li > * {
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+.title{
+    background-color: royalblue;
+    text-align: center;
+    color: white;
+    padding-top: 1rem;
+    float: left;
+    width: 20%;
+    height: 650px;
+}
+.paras{
+    float: left;
+    margin-left: 10px;
+    width: 79%;
+    height: 650px;
+}
