@@ -1,0 +1,55 @@
+body{
+    box-sizing: border-box;
+}
+/* using position */
+.container_pos{
+    position: relative;
+    border: 1px dashed red;
+    height: 300px;
+}
+.container_pos .left{
+    position: absolute;
+    left: 0;
+    background-color: beige;
+    margin-right: 320px;
+}
+.container_pos .right{
+    position: absolute;
+    right: 0;
+    margin-left: 20px;
+    width: 300px;
+    background-color: beige;
+}
+/* using float(未实现) */
+.container_float{
+    border: 1px dashed green;
+    margin-top: 2em;
+    overflow: hidden;
+}
+.container_float .left{
+    float: left;
+    margin-left: -320px;
+    width: 100%;
+    background-color: beige;
+}
+.container_float .right{
+    float: right;
+    margin-left: 20px;
+    width: 300px;
+    background-color: beige;
+}
+/* using flex */
+.container_flex{
+    border: 1px dashed blue;
+    margin-top: 2em;
+    display: flex;
+}
+.container_flex .left{
+    flex: 1;
+    background-color: beige;
+}
+.container_flex .right{
+    flex: 0 300px;
+    margin-left: 20px;
+    background-color: beige;
+}
