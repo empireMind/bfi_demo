@@ -1,0 +1,57 @@
+body{
+    box-sizing: border-box;
+}
+/* using float（圣杯布局） */
+.container{
+    /* padding-left: 200px; 
+    padding-right: 200px; */
+    overflow: hidden;
+    border: 1px dashed green;  
+}
+.container .left{
+    float: left;
+    background-color: beige;
+    width: 200px;
+    margin-left: -100%;
+    /* position: relative;
+    left: -200px; */
+}
+.container .mid{
+    float: left;
+    /* background-color: beige; */
+    width: 100%;
+}
+.container .right{
+    float: left;
+    background-color: beige;
+    width: 200px;
+    margin-left: -200px;
+    /* position: relative;
+    right: -200px; */
+}
+.container .mid .inner{
+    /* 双飞翼布局 */
+    margin-left: 210px; 
+    margin-right: 210px;
+    background-color: beige;
+}
+/* using flex */
+.container_flex{
+    display: flex;
+    border: 1px dashed blue;
+    margin-top: 2em;
+}
+.container_flex .left{
+    flex: 0 200px;
+    background-color: beige;
+    margin-right: 10px;
+}
+.container_flex .mid{
+    flex: 1;
+    background-color: beige;
+}
+.container_flex .right{
+    flex: 0 200px;
+    background-color: beige;
+    margin-left: 10px;
+}

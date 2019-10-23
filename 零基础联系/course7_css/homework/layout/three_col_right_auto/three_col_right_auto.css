@@ -1,0 +1,68 @@
+body{
+    box-sizing: border-box;
+}
+/* using pos */
+.container_pos{
+    border: 1px dashed red;
+    position: relative;
+    height: 450px;
+}
+.container_pos > div{
+    background-color: beige;
+    position: absolute;
+}
+.container_pos .left{
+    left: 0;
+    width: 200px;
+    margin-right: 10px;
+}
+.container_pos .mid{
+    left: 210px;
+    width: 200px;
+    margin-right: 10px;
+}
+.container_pos .right{
+    left: 420px;
+}
+/* using float */
+.container_float{
+    margin-top: 20px;
+    border: 1px dashed green;
+    overflow: hidden;
+}
+.container_float > div{
+    background-color: beige;
+}
+.container_float .left{
+    float: left;
+    width: 200px;
+    margin-right: 10px;
+}
+.container_float .mid{
+    float: left;
+    width: 200px;
+    margin-right: 10px;
+}
+.container_float .right{
+    overflow: hidden;
+}
+/* using flex */
+.container_flex{
+    border: 1px dashed blue;
+    display: flex;
+    margin-top: 20px;
+}
+.container_flex > div{
+    background-color: beige;    
+}
+.container_flex .left{
+    flex: 0 200px;
+    margin-right: 10px;
+}
+.container_flex .mid{
+    flex: 0 200px;
+    margin-right: 10px;
+}
+.container_flex .right{
+    flex: 1;
+}
