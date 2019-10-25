@@ -1,0 +1,17 @@
+.bg{
+    width: 100%;
+    background-color: black;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+}
+.bg > *{
+    margin: 0 auto;
+}
+#login{
+    width: 970px;
+    height: 250px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 1px;
+    font-family: "Montserrat Light";
+}
